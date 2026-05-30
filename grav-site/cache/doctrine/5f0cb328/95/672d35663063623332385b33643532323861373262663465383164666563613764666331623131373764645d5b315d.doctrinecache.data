@@ -1,3 +1,0 @@
-1774908859
-a:2:{s:7:"content";s:223:"<h1>The Project</h1>
-<p><em>(Note: To render the custom fields above, you will need to update your Twig template <code>project.html.twig</code> to output <code>page.header.content_sections.description</code>, etc.)</em></p>";s:12:"content_meta";N;}
