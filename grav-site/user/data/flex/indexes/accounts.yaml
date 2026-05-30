@@ -1,0 +1,9 @@
+version: '1.2'
+timestamp: 1773692790
+count: 1
+index:
+  etlam:
+    storage_key: etlam
+    storage_timestamp: 1773692792
+    key: etlam
+    email: malte@maltehillebrand.de

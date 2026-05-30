@@ -1,0 +1,6 @@
+1774304840
+O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:16:"blog/post-1-news";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:3:{s:5:"title";s:34:"K.ai Model released (Example News)";s:4:"date";s:16:"16-03-2026 12:12";s:8:"taxonomy";a:2:{s:8:"category";a:1:{i:0;s:4:"news";}s:3:"tag";a:2:{i:0;s:2:"AI";i:1;s:11:"open-source";}}}s:11:"frontmatter";s:153:"title: "K.ai Model released (Example News)"
+date: 16-03-2026 12:12
+taxonomy:
+    category: [news] # Use [news] for news/events
+    tag: [AI, open-source]";s:8:"markdown";s:34:"Here is the content of the news...";}s:7:"storage";a:6:{s:3:"key";s:16:"blog/post-1-news";s:11:"storage_key";s:19:"06.blog/post-1-news";s:8:"template";s:4:"item";s:17:"storage_timestamp";i:1773693172;s:8:"markdown";a:1:{s:0:"";a:1:{s:4:"item";i:1773693172;}}s:8:"checksum";s:32:"555d4293b8037432505d74534891af55";}}

@@ -1,0 +1,6 @@
+1774304657
+O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:20:"blog/post-2-tutorial";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:3:{s:5:"title";s:40:"How to use K.ai Model (Example Tutorial)";s:4:"date";s:16:"16-03-2026 12:00";s:8:"taxonomy";a:2:{s:8:"category";a:1:{i:0;s:8:"tutorial";}s:3:"tag";a:2:{i:0;s:2:"AI";i:1;s:11:"open-source";}}}s:11:"frontmatter";s:163:"title: "How to use K.ai Model (Example Tutorial)"
+date: 16-03-2026 12:00
+taxonomy:
+    category: [tutorial] # Use [news] for news/events
+    tag: [AI, open-source]";s:8:"markdown";s:38:"Here is the content of the tutorial...";}s:7:"storage";a:6:{s:3:"key";s:20:"blog/post-2-tutorial";s:11:"storage_key";s:23:"06.blog/post-2-tutorial";s:8:"template";s:4:"item";s:17:"storage_timestamp";i:1773693154;s:8:"markdown";a:1:{s:0:"";a:1:{s:4:"item";i:1773693154;}}s:8:"checksum";s:32:"58191cb6300b53f9614a526475ea804f";}}

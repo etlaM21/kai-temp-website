@@ -1,0 +1,15 @@
+1774304657
+O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:30:"performing-arts-and-technology";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:3:{s:5:"title";s:28:"Performing Arts & Technology";s:4:"menu";s:22:"Performing Arts & Tech";s:16:"content_sections";a:4:{s:6:"vision";s:60:"Our vision for blending performing arts with AI/technology.
+";s:7:"process";s:39:"Step-by-step breakdown of how we work.
+";s:15:"lessons_learned";s:32:"Key takeaways from our journey.
+";s:16:"related_projects";s:60:"Links and descriptions of sibling or inspirational projects.";}}s:11:"frontmatter";s:358:"title: Performing Arts & Technology
+menu: Performing Arts & Tech
+content_sections:
+  vision: |
+    Our vision for blending performing arts with AI/technology.
+  process: |
+    Step-by-step breakdown of how we work.
+  lessons_learned: |
+    Key takeaways from our journey.
+  related_projects: |
+    Links and descriptions of sibling or inspirational projects.";s:8:"markdown";s:0:"";}s:7:"storage";a:6:{s:3:"key";s:30:"performing-arts-and-technology";s:11:"storage_key";s:33:"03.performing-arts-and-technology";s:8:"template";s:15:"performing-arts";s:17:"storage_timestamp";i:1773693090;s:8:"markdown";a:1:{s:0:"";a:1:{s:15:"performing-arts";i:1773693090;}}s:8:"checksum";s:32:"6d9adad6f4676902dbf52cd2c16b37a8";}}

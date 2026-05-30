@@ -1,0 +1,11 @@
+state: enabled
+email: malte@maltehillebrand.de
+fullname: 'Malte H'
+title: Administrator
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+hashed_password: $2y$12$sDEVgNaus0Q9/4J.pHmGae.CjqBsi/asahPDOh3XhMlr4Bvoyfa7u

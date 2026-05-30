@@ -1,0 +1,38 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+    <div class="open-code-wrapper">
+        <h1>{{ page.title }}</h1>
+        
+        <section class="k-ai">
+            <h2>K.ai</h2>
+            {{ page.header.content_sections.k_ai|markdown }}
+        </section>
+
+        <section class="code">
+            <h2>Code</h2>
+            {{ page.header.content_sections.code|markdown }}
+        </section>
+
+        <section class="documentation">
+            <h2>Documentation</h2>
+            {{ page.header.content_sections.documentation|markdown }}
+        </section>
+
+        <hr>
+
+        <section class="tutorials-feed">
+            <h2>Latest Tutorials</h2>
+            <div class="grid">
+                {# This loops through the collection we defined in the open-code.md frontmatter #}
+                {% for tutorial in page.collection %}
+                    <article class="tutorial-card">
+                        <h3><a href="{{ tutorial.url }}">{{ tutorial.title }}</a></h3>
+                        <p class="date">{{ tutorial.date|date("M d, Y") }}</p>
+                        <p>{{ tutorial.summary(150) }}</p>
+                    </article>
+                {% endfor %}
+            </div>
+        </section>
+    </div>
+{% endblock %}

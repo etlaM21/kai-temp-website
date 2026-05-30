@@ -1,0 +1,11 @@
+1774304840
+O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:4:"blog";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:3:{s:5:"title";s:4:"Blog";s:4:"menu";s:4:"Blog";s:7:"content";a:4:{s:5:"items";a:1:{i:0;s:14:"@self.children";}s:5:"limit";i:10;s:5:"order";a:2:{s:2:"by";s:4:"date";s:3:"dir";s:4:"desc";}s:10:"pagination";b:1;}}s:11:"frontmatter";s:150:"title: Blog
+menu: Blog
+content:
+    items:
+        - '@self.children'
+    limit: 10
+    order:
+        by: date
+        dir: desc
+    pagination: true";s:8:"markdown";s:30:"# Updates, Tutorials, and News";}s:7:"storage";a:7:{s:3:"key";s:4:"blog";s:11:"storage_key";s:7:"06.blog";s:8:"template";s:4:"blog";s:17:"storage_timestamp";i:1773693116;s:8:"markdown";a:1:{s:0:"";a:1:{s:4:"blog";i:1773693116;}}s:8:"children";a:2:{s:11:"post-1-news";b:0;s:15:"post-2-tutorial";b:0;}s:8:"checksum";s:32:"0522b88a87d9a2197b944f00765b9308";}}

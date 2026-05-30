@@ -1,0 +1,14 @@
+<ul class="nav-list">
+    {# Loop through all top-level pages that are marked as visible (have a number prefix) #}
+    {% for p in pages.children.visible %}
+        
+        {# Check if the current page is active to add a CSS class for styling #}
+        {% set current_page = (p.active or p.activeChild) ? 'active' : '' %}
+        
+        <li class="{{ current_page }}">
+            {# Use page.menu if it exists in frontmatter (like we set up earlier), otherwise fallback to page.title #}
+            <a href="{{ p.url }}">.{{ p.menu|default(p.title)|lower|replace({' ': '-'}) }}</a>
+        </li>
+        
+    {% endfor %}
+</ul>

@@ -1,0 +1,12 @@
+<section class="modular-news-feed">
+    <div class="news-grid">
+        {# Loops through the Blog collection we defined in news-feed.md #}
+        {% for news_item in page.collection %}
+            <article class="news-card">
+                <span class="date">{{ news_item.date|date("Y/m/d") }}</span>
+                <h3><a href="{{ news_item.url }}">{{ news_item.title }}</a></h3>
+                <p>{{ news_item.summary(120)|striptags }}</p>
+            </article>
+        {% endfor %}
+    </div>
+</section>

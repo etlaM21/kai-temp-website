@@ -1,0 +1,14 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+        {# This loop goes through the _teaser, _description, and _news-events folders #}
+        {# and automatically renders them using the templates inside templates/modular/ #}
+        
+        {% for module in page.collection() %}
+            <div id="{{ module.menu|default(module.title)|lower|replace({' ': '-'}) }}" class="module-section {% if module.title == 'Minimal Description' %}
+        smaller
+    {% endif %}">
+                {{ module.content|raw }}
+            </div>
+        {% endfor %}
+{% endblock %}

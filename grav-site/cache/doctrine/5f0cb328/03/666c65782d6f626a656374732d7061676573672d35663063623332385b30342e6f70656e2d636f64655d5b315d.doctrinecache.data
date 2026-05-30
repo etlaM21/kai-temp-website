@@ -1,0 +1,20 @@
+1774304839
+O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:9:"open-code";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:4:{s:5:"title";s:9:"Open Code";s:4:"menu";s:9:"Open Code";s:16:"content_sections";a:3:{s:4:"k_ai";s:49:"Details about the K.ai infrastructure or models.
+";s:4:"code";s:52:"Repositories, GitHub links, and core codebase info.
+";s:13:"documentation";s:48:"How to use, deploy, and contribute to the code.
+";}s:7:"content";a:3:{s:5:"items";a:1:{i:0;a:1:{s:14:"@page.children";s:5:"/blog";}}s:5:"limit";i:5;s:6:"filter";a:1:{s:8:"category";s:8:"tutorial";}}}s:11:"frontmatter";s:421:"title: Open Code
+menu: Open Code
+content_sections:
+  k_ai: |
+    Details about the K.ai infrastructure or models.
+  code: |
+    Repositories, GitHub links, and core codebase info.
+  documentation: |
+    How to use, deploy, and contribute to the code.
+# This collection fetches Blog posts categorized as "tutorial"
+content:
+    items:
+        - '@page.children': '/blog'
+    limit: 5
+    filter:
+        category: tutorial";s:8:"markdown";s:0:"";}s:7:"storage";a:6:{s:3:"key";s:9:"open-code";s:11:"storage_key";s:12:"04.open-code";s:8:"template";s:9:"open-code";s:17:"storage_timestamp";i:1773695864;s:8:"markdown";a:1:{s:0:"";a:1:{s:9:"open-code";i:1773695864;}}s:8:"checksum";s:32:"2a4e8de2888704eb255049d93e864b41";}}

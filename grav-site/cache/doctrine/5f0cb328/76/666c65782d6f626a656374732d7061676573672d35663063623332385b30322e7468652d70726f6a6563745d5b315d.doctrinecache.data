@@ -1,0 +1,10 @@
+1774304839
+O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:11:"the-project";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:3:{s:5:"title";s:11:"The Project";s:4:"menu";s:11:"The Project";s:16:"content_sections";a:2:{s:11:"description";s:54:"Detailed explanation of the KASPAR project goes here.
+";s:7:"funding";s:61:"Information about our sponsors, grants, and funding partners.";}}s:11:"frontmatter";s:208:"title: The Project
+menu: The Project
+content_sections:
+  description: |
+    Detailed explanation of the KASPAR project goes here.
+  funding: |
+    Information about our sponsors, grants, and funding partners.";s:8:"markdown";s:180:"# The Project
+*(Note: To render the custom fields above, you will need to update your Twig template `project.html.twig` to output `page.header.content_sections.description`, etc.)*";}s:7:"storage";a:6:{s:3:"key";s:11:"the-project";s:11:"storage_key";s:14:"02.the-project";s:8:"template";s:7:"project";s:17:"storage_timestamp";i:1773693084;s:8:"markdown";a:1:{s:0:"";a:1:{s:7:"project";i:1773693084;}}s:8:"checksum";s:32:"980e226ff503570a5c1685118c05787f";}}

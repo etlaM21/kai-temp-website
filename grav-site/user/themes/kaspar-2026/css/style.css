@@ -1,0 +1,264 @@
+.space-mono-regular {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.space-mono-bold {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.space-mono-regular-italic {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.space-mono-bold-italic {
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.libre-caslon-display-regular {
+    font-family: "Libre Caslon Display", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+   
+
+
+/* --- Global Styles --- */
+body {
+    font-family: "Space Mono", monospace;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #f9f9f9;
+    background-color: #000;
+}
+
+h1, h2, h3 {
+    font-family: "Libre Caslon Display", serif;
+}
+
+/* --- Header & Navigation --- */
+.site-header {
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    background: linear-gradient(180deg,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.site-header .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-list {
+    list-style: none;
+    display: contents;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-list a:hover,
+.nav-list li.active a {
+    color: #ddd;
+}
+
+.main-navigation {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    height: 100px;
+    align-items: center;
+}
+.logo {
+    grid-column: 2/5;
+}
+.nav-list li {
+    	text-transform: lowercase;
+        text-align: center;
+}
+
+/* --- Main Content Layout --- */
+#main-content {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-top: 100px;
+    min-height: 60vh;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+#main-content > * {
+    margin-bottom: 3rem;
+    grid-column: 2 / -2;
+    &.smaller {
+        grid-column: 3 / -3;
+    }
+    img, video {
+        width: 100%;
+    }
+}
+
+/* --- Project Page Layout --- */
+
+.project-wrapper h1 {
+    font-size: 6rem;
+    margin: 0;
+  }
+  
+  .project-wrapper {
+    grid-column: 1 / -1 !important;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+  }
+  
+  .project-wrapper h1:nth-of-type(2n) {
+    text-align: right;
+  }
+  
+  .project-wrapper p {
+    grid-column: 4 / -3;
+  }
+  
+  .project-wrapper h1 {
+    /* font-size: 6rem; */
+    font-size: 8rem;
+    grid-column: 1 / -1 !important;
+  }
+  
+  .project-wrapper p:nth-of-type(2n) {
+    grid-column: 3 / -4;
+  }
+
+/* --- WebGL Background --- */
+#webgl-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1; /* Puts it behind everything */
+    pointer-events: none; /* Crucial: allows you to click links through the canvas */
+    background-color: #000;
+}
+
+/* Make sure your main content doesn't have a solid background hiding the shader */
+body, #main-content {
+    background-color: transparent !important; 
+}
+
+#webgl-container p {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 11.2pt;
+    line-height: 11.2pt;
+    color: white;
+    overflow: clip;
+    text-align: justify;
+    z-index: -100;
+    margin: 0;
+    padding: 0;
+}
+
+#webgl-container #gradient {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgb(200, 200, 200), rgb(0, 0, 0));
+    mix-blend-mode: multiply;
+}
+
+#hero {
+    position: relative;
+    width: 100vw;
+    height: 90vh;
+}
+
+#hero h1 {
+    position: absolute;
+    color: white;
+    text-shadow: 0px 0px 10px white;
+    font-size: 224pt;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    mix-blend-mode: color-dodge;
+    margin: 0;
+}
+
+
+#webgl-container canvas {
+    position: absolute;
+    mix-blend-mode: multiply;
+}
+
+/* --- News & Events Grid --- */
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16.66%;
+}
+
+.news-card {
+}
+
+.news-card h3 {
+    margin: 0;
+    text-align: center;
+}
+
+.news-card p {
+    margin: 0.5rem 0;
+}
+
+.news-card a {
+    text-decoration: none;
+    color: #ddd;
+}
+
+.date {
+    font-size: 0.85rem;
+    color: #ddd;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+/* --- Footer --- */
+
+.site-footer {
+    width: 100%;
+    background: linear-gradient(180deg,rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+.main-footer {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    height: 100px;
+    align-items: center;
+}
+
+.footer-copyright {
+    grid-column: 2/7;
+}
