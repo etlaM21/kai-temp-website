@@ -1,16 +1,11 @@
 {% extends 'partials/base.html.twig' %}
 
 {% block content %}
-    <h1>{{ page.title }}</h1>
-    {{ page.content|raw }}
-
-    <div class="blog-list">
+    <div class="news-grid-wrapper">
         {% for child in page.collection %}
             <article class="blog-summary">
                 <h2><a href="{{ child.url }}">{{ child.title }}</a></h2>
                 <p class="date">{{ child.date|date("M d, Y") }}</p>
-                <p><strong>Category:</strong> {{ child.taxonomy.category|join(', ') }}</p>
-                
                 <p>{{ child.summary(200) }}</p>
                 <a href="{{ child.url }}" class="read-more">Read More</a>
             </article>

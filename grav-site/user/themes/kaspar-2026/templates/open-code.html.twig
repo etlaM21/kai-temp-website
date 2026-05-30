@@ -1,38 +1,23 @@
 {% extends 'partials/base.html.twig' %}
 
 {% block content %}
-    <div class="open-code-wrapper">
-        <h1>{{ page.title }}</h1>
-        
-        <section class="k-ai">
-            <h2>K.ai</h2>
-            {{ page.header.content_sections.k_ai|markdown }}
-        </section>
+    <div class="project-wrapper">
+        <h1>K.ai</h1>
+        {{ page.header.content_sections.k_ai|markdown }}
 
-        <section class="code">
-            <h2>Code</h2>
-            {{ page.header.content_sections.code|markdown }}
-        </section>
+        <h1>Code</h1>
+        {{ page.header.content_sections.code|markdown }}
 
-        <section class="documentation">
-            <h2>Documentation</h2>
-            {{ page.header.content_sections.documentation|markdown }}
-        </section>
+        <h1>Documentation</h1>
+        {{ page.header.content_sections.documentation|markdown }}
 
-        <hr>
-
-        <section class="tutorials-feed">
-            <h2>Latest Tutorials</h2>
-            <div class="grid">
-                {# This loops through the collection we defined in the open-code.md frontmatter #}
-                {% for tutorial in page.collection %}
-                    <article class="tutorial-card">
-                        <h3><a href="{{ tutorial.url }}">{{ tutorial.title }}</a></h3>
-                        <p class="date">{{ tutorial.date|date("M d, Y") }}</p>
-                        <p>{{ tutorial.summary(150) }}</p>
-                    </article>
-                {% endfor %}
-            </div>
-        </section>
+        {% if page.collection|length > 0 %}
+            <h1>Latest Tutorials</h1>
+            {% for tutorial in page.collection %}
+                <h2><a href="{{ tutorial.url }}">{{ tutorial.title }}</a></h2>
+                <p class="date">{{ tutorial.date|date("M d, Y") }}</p>
+                <p>{{ tutorial.summary(150) }}</p>
+            {% endfor %}
+        {% endif %}
     </div>
 {% endblock %}

@@ -1,0 +1,28 @@
+title: Open Code
+extends@: default
+
+form:
+  fields:
+    tabs:
+      type: tabs
+      active: 1
+      fields:
+        content_sections:
+          type: tab
+          title: 'Content Sections'
+          fields:
+            header.content_sections.k_ai:
+              type: textarea
+              label: 'K.ai Infrastructure'
+              help: 'Details about the K.ai infrastructure or models'
+              rows: 6
+            header.content_sections.code:
+              type: textarea
+              label: 'Code & Repositories'
+              help: 'Repositories, GitHub links, and core codebase info'
+              rows: 6
+            header.content_sections.documentation:
+              type: textarea
+              label: Documentation
+              help: 'How to use, deploy, and contribute to the code'
+              rows: 6

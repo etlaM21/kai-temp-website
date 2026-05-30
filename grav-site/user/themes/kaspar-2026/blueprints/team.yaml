@@ -1,0 +1,36 @@
+title: Team
+extends@: default
+
+form:
+  fields:
+    tabs:
+      fields:
+        content_sections:
+          type: tab
+          title: 'Content Sections'
+          fields:
+            header.content_sections.kaspar_team:
+              type: textarea
+              label: 'Kaspar Team'
+              help: 'Core members of the KASPAR project'
+              rows: 6
+            header.content_sections.residenztheater:
+              type: textarea
+              label: 'Residenztheater'
+              help: 'Collaborators from Residenztheater'
+              rows: 6
+            header.content_sections.filmuni:
+              type: textarea
+              label: 'Filmuni'
+              help: 'Collaborators from Filmuni'
+              rows: 6
+            header.content_sections.contact:
+              type: textarea
+              label: 'Contact'
+              help: 'Contact information'
+              rows: 4
+            header.content_sections.sponsors:
+              type: textarea
+              label: 'Sponsors'
+              help: 'Logos and links to sponsors'
+              rows: 4

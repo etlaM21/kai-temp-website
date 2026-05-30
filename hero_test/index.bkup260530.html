@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>K.ai Test</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <style>
+            .space-mono-regular {
+                font-family: "Space Mono", monospace;
+                font-weight: 400;
+                font-style: normal;
+            }
+
+            .space-mono-bold {
+                font-family: "Space Mono", monospace;
+                font-weight: 700;
+                font-style: normal;
+            }
+
+            .space-mono-regular-italic {
+                font-family: "Space Mono", monospace;
+                font-weight: 400;
+                font-style: italic;
+            }
+
+            .space-mono-bold-italic {
+                font-family: "Space Mono", monospace;
+                font-weight: 700;
+                font-style: italic;
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                background-color: black;
+                font-family: "Space Mono", monospace;
+            }
+
+            p {
+                width: 100vw;
+                height: 100vh;
+                position: absolute;
+                top: 0;
+                left: 0;
+                font-size: 11.2pt;
+                line-height: 11.2pt;
+                color: white;
+                overflow: clip;
+                text-align: justify;
+                z-index: -100;
+            }
+
+            #gradient {
+                width: 100vw;
+                height: 100vh;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background: linear-gradient(rgb(200, 200, 200), rgb(0, 0, 0));
+                mix-blend-mode: multiply;
+            }
+
+            h1 {
+                position: absolute;
+                color: white;
+                text-shadow: 0px 0px 10px white;
+                font-size: 224pt;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 100;
+                mix-blend-mode: color-dodge;
+            }
+
+
+            canvas {
+                position: absolute;
+                mix-blend-mode: multiply;
+            }
+        </style>
+        <link rel="stylesheet" href="">
+        <script type="importmap">
+        {
+            "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.183.2/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.183.2/examples/jsm/"
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <h1>
+            KASPAR
+        </h1>
+
+        <div id="gradient">
+            &nbsp;
+        </div>
+
+        <p>
+            Peter Handke’s play Kaspar remains one of the most radical and destabilizing works of modern drama because it treats language not as a gift but as a structural violence. It begins with a figure who is a literal blank slate, a personification of raw human existence devoid of social programming, who enters the stage with a single, repetitive sentence that he does not yet understand. This character is modeled loosely on the historical Kaspar Hauser, but Handke strips away the nineteenth-century mystery to focus entirely on the mechanics of linguistic indoctrination. Throughout the duration of the play, Kaspar is subjected to a relentless barrage of voices from unseen prompters who function as the architects of his consciousness. These voices do not merely teach him to communicate; they teach him to categorize, to judge, and to conform to a pre-existing social order. Handke utilizes a technique he calls speech torture to illustrate how the acquisition of grammar is simultaneously the acquisition of a mental cage. As Kaspar learns to name the objects around him, he loses his direct, unmediated relationship with reality. He learns that a table is a table and that it must be placed in a certain way, and in doing so, he internalizes the rules of a society that demands efficiency and predictability over individual essence. The tragedy of the play lies in its depiction of progress as a form of erasure. By the time Kaspar becomes a fluent speaker, he has been hollowed out, becoming a mere echo of the prompters who have colonized his mind. The play is physically and auditorily exhausting, designed to make the audience feel the weight of this linguistic imposition. Handke’s rhythmic and repetitive prose creates a sense of claustrophobia, suggesting that our very thoughts are composed of borrowed parts and inherited structures. By the final act, when multiple versions of Kaspar appear on stage, the individuality of the protagonist has been completely liquidated into a mass-produced social identity. The play ends not in a triumph of human expression, but in a cacophony of noise and a breakdown of the very order that was so painstakingly constructed. It serves as a haunting reminder that while language allows us to navigate the world, it also dictates the boundaries of what we are allowed to perceive and who we are permitted to be. Through Kaspar, Handke suggests that to enter the human community is to undergo a fundamental betrayal of the self, trading the chaos of true freedom for the orderly silence of a linguistic prison. Peter Handke’s play Kaspar represents a monumental shift in post-war European drama because it treats the stage not as a place for storytelling but as a laboratory for the deconstruction of human consciousness through the medium of language. The play serves as a radical departure from the traditional theatrical arc, replacing character development with a clinical and often agonizing process of linguistic socialization that Handke famously termed speech torture. At the center of this experiment is Kaspar, a figure who enters the performance space as an ontological blank slate, possessing only a single, nonsensical sentence that he repeats like a protective talisman. This sentence is initially a fragment of pure existence, unburdened by definition or social utility, yet it becomes the very hook upon which the invisible prompters hang the heavy fabric of societal expectation. These prompters, who remain offstage and disembodied, represent the collective weight of history, law, grammar, and social norms. They do not merely teach Kaspar how to speak; they dismantle his chaotic, pre-linguistic reality and replace it with a rigid, gridded world of definitions and functions. As the play progresses, the audience witnesses the systematic colonization of Kaspar’s mind. He is taught that objects have specific places and that his body must move in certain ways to reflect the order of his speech. The physical environment of the stage, which begins in a state of disorganized clutter, is gradually transformed into a sterile and perfectly arranged space as Kaspar internalizes the rules of his captors. This synchronization of language, movement, and environment suggests that our very perception of reality is a manufactured byproduct of the words we are given to describe it. Handke’s prose is relentless, utilizing rhythmic repetitions and circular logic to create a sense of claustrophobia that affects the spectator as much as the protagonist. The playwright suggests that the moment a child learns to say I, they have already surrendered to a system that defines what that I is allowed to be. By the middle of the play, Kaspar has been successfully broken and rebuilt into a functioning member of society, capable of articulating complex thoughts and behaving with domestic propriety. However, this transition is framed as a profound loss rather than a triumph of education. The original, spontaneous Kaspar is murdered by the articulate, polite version of himself. The horror of the play reaches its zenith when other versions of Kaspar begin to appear on stage, all dressed identically and moving with the same programmed precision. This multiplication of the self serves as a chilling visual metaphor for the mass-produced nature of modern identity, where the unique soul is discarded in favor of a standardized social unit. The play eventually collapses into a cacophony of overlapping voices and sensory overload, illustrating the eventual breakdown of any system that attempts to impose total order upon the inherent messiness of human life. Handke is not just critiquing a specific political or social regime but is interrogating the very foundation of human communication, suggesting that we are all, to some extent, puppets of a language that we did not choose and cannot escape. The play ends on a note of deep existential exhaustion, leaving the audience to reflect on the degree to which their own thoughts, desires, and identities are merely the echoes of the prompters who shaped them. Through this grueling theatrical experience, Kaspar remains a searing indictment of the ways in which civilization polishes the individual until there is nothing left of the original stone, trading the terrifying freedom of silence for the comfortable prison of a shared vocabulary. Peter Handke’s play Kaspar remains one of the most radical and destabilizing works of modern drama because it treats language not as a gift but as a structural violence. It begins with a figure who is a literal blank slate, a personification of raw human existence devoid of social programming, who enters the stage with a single, repetitive sentence that he does not yet understand. This character is modeled loosely on the historical Kaspar Hauser, but Handke strips away the nineteenth-century mystery to focus entirely on the mechanics of linguistic indoctrination. Throughout the duration of the play, Kaspar is subjected to a relentless barrage of voices from unseen prompters who function as the architects of his consciousness. These voices do not merely teach him to communicate; they teach him to categorize, to judge, and to conform to a pre-existing social order. Handke utilizes a technique he calls speech torture to illustrate how the acquisition of grammar is simultaneously the acquisition of a mental cage. As Kaspar learns to name the objects around him, he loses his direct, unmediated relationship with reality. He learns that a table is a table and that it must be placed in a certain way, and in doing so, he internalizes the rules of a society that demands efficiency and predictability over individual essence. The tragedy of the play lies in its depiction of progress as a form of erasure. By the time Kaspar becomes a fluent speaker, he has been hollowed out, becoming a mere echo of the prompters who have colonized his mind. The play is physically and auditorily exhausting, designed to make the audience feel the weight of this linguistic imposition. Handke’s rhythmic and repetitive prose creates a sense of claustrophobia, suggesting that our very thoughts are composed of borrowed parts and inherited structures. By the final act, when multiple versions of Kaspar appear on stage, the individuality of the protagonist has been completely liquidated into a mass-produced social identity. The play ends not in a triumph of human expression, but in a cacophony of noise and a breakdown of the very order that was so painstakingly constructed. It serves as a haunting reminder that while language allows us to navigate the world, it also dictates the boundaries of what we are allowed to perceive and who we are permitted to be. Through Kaspar, Handke suggests that to enter the human community is to undergo a fundamental betrayal of the self, trading the chaos of true freedom for the orderly silence of a linguistic prison. Peter Handke’s play Kaspar represents a monumental shift in post-war European drama because it treats the stage not as a place for storytelling but as a laboratory for the deconstruction of human consciousness through the medium of language. The play serves as a radical departure from the traditional theatrical arc, replacing character development with a clinical and often agonizing process of linguistic socialization that Handke famously termed speech torture. At the center of this experiment is Kaspar, a figure who enters the performance space as an ontological blank slate, possessing only a single, nonsensical sentence that he repeats like a protective talisman. This sentence is initially a fragment of pure existence, unburdened by definition or social utility, yet it becomes the very hook upon which the invisible prompters hang the heavy fabric of societal expectation. These prompters, who remain offstage and disembodied, represent the collective weight of history, law, grammar, and social norms. They do not merely teach Kaspar how to speak; they dismantle his chaotic, pre-linguistic reality and replace it with a rigid, gridded world of definitions and functions. As the play progresses, the audience witnesses the systematic colonization of Kaspar’s mind. He is taught that objects have specific places and that his body must move in certain ways to reflect the order of his speech. The physical environment of the stage, which begins in a state of disorganized clutter, is gradually transformed into a sterile and perfectly arranged space as Kaspar internalizes the rules of his captors. This synchronization of language, movement, and environment suggests that our very perception of reality is a manufactured byproduct of the words we are given to describe it. Handke’s prose is relentless, utilizing rhythmic repetitions and circular logic to create a sense of claustrophobia that affects the spectator as much as the protagonist. The playwright suggests that the moment a child learns to say I, they have already surrendered to a system that defines what that I is allowed to be. By the middle of the play, Kaspar has been successfully broken and rebuilt into a functioning member of society, capable of articulating complex thoughts and behaving with domestic propriety. However, this transition is framed as a profound loss rather than a triumph of education. The original, spontaneous Kaspar is murdered by the articulate, polite version of himself. The horror of the play reaches its zenith when other versions of Kaspar begin to appear on stage, all dressed identically and moving with the same programmed precision. This multiplication of the self serves as a chilling visual metaphor for the mass-produced nature of modern identity, where the unique soul is discarded in favor of a standardized social unit. The play eventually collapses into a cacophony of overlapping voices and sensory overload, illustrating the eventual breakdown of any system that attempts to impose total order upon the inherent messiness of human life. Handke is not just critiquing a specific political or social regime but is interrogating the very foundation of human communication, suggesting that we are all, to some extent, puppets of a language that we did not choose and cannot escape. The play ends on a note of deep existential exhaustion, leaving the audience to reflect on the degree to which their own thoughts, desires, and identities are merely the echoes of the prompters who shaped them. Through this grueling theatrical experience, Kaspar remains a searing indictment of the ways in which civilization polishes the individual until there is nothing left of the original stone, trading the terrifying freedom of silence for the comfortable prison of a shared vocabulary.             Peter Handke’s play Kaspar remains one of the most radical and destabilizing works of modern drama because it treats language not as a gift but as a structural violence. It begins with a figure who is a literal blank slate, a personification of raw human existence devoid of social programming, who enters the stage with a single, repetitive sentence that he does not yet understand. This character is modeled loosely on the historical Kaspar Hauser, but Handke strips away the nineteenth-century mystery to focus entirely on the mechanics of linguistic indoctrination. Throughout the duration of the play, Kaspar is subjected to a relentless barrage of voices from unseen prompters who function as the architects of his consciousness. These voices do not merely teach him to communicate; they teach him to categorize, to judge, and to conform to a pre-existing social order. Handke utilizes a technique he calls speech torture to illustrate how the acquisition of grammar is simultaneously the acquisition of a mental cage. As Kaspar learns to name the objects around him, he loses his direct, unmediated relationship with reality. He learns that a table is a table and that it must be placed in a certain way, and in doing so, he internalizes the rules of a society that demands efficiency and predictability over individual essence. The tragedy of the play lies in its depiction of progress as a form of erasure. By the time Kaspar becomes a fluent speaker, he has been hollowed out, becoming a mere echo of the prompters who have colonized his mind. The play is physically and auditorily exhausting, designed to make the audience feel the weight of this linguistic imposition. Handke’s rhythmic and repetitive prose creates a sense of claustrophobia, suggesting that our very thoughts are composed of borrowed parts and inherited structures. By the final act, when multiple versions of Kaspar appear on stage, the individuality of the protagonist has been completely liquidated into a mass-produced social identity. The play ends not in a triumph of human expression, but in a cacophony of noise and a breakdown of the very order that was so painstakingly constructed. It serves as a haunting reminder that while language allows us to navigate the world, it also dictates the boundaries of what we are allowed to perceive and who we are permitted to be. Through Kaspar, Handke suggests that to enter the human community is to undergo a fundamental betrayal of the self, trading the chaos of true freedom for the orderly silence of a linguistic prison. Peter Handke’s play Kaspar represents a monumental shift in post-war European drama because it treats the stage not as a place for storytelling but as a laboratory for the deconstruction of human consciousness through the medium of language. The play serves as a radical departure from the traditional theatrical arc, replacing character development with a clinical and often agonizing process of linguistic socialization that Handke famously termed speech torture. At the center of this experiment is Kaspar, a figure who enters the performance space as an ontological blank slate, possessing only a single, nonsensical sentence that he repeats like a protective talisman. This sentence is initially a fragment of pure existence, unburdened by definition or social utility, yet it becomes the very hook upon which the invisible prompters hang the heavy fabric of societal expectation. These prompters, who remain offstage and disembodied, represent the collective weight of history, law, grammar, and social norms. They do not merely teach Kaspar how to speak; they dismantle his chaotic, pre-linguistic reality and replace it with a rigid, gridded world of definitions and functions. As the play progresses, the audience witnesses the systematic colonization of Kaspar’s mind. He is taught that objects have specific places and that his body must move in certain ways to reflect the order of his speech. The physical environment of the stage, which begins in a state of disorganized clutter, is gradually transformed into a sterile and perfectly arranged space as Kaspar internalizes the rules of his captors. This synchronization of language, movement, and environment suggests that our very perception of reality is a manufactured byproduct of the words we are given to describe it. Handke’s prose is relentless, utilizing rhythmic repetitions and circular logic to create a sense of claustrophobia that affects the spectator as much as the protagonist. The playwright suggests that the moment a child learns to say I, they have already surrendered to a system that defines what that I is allowed to be. By the middle of the play, Kaspar has been successfully broken and rebuilt into a functioning member of society, capable of articulating complex thoughts and behaving with domestic propriety. However, this transition is framed as a profound loss rather than a triumph of education. The original, spontaneous Kaspar is murdered by the articulate, polite version of himself. The horror of the play reaches its zenith when other versions of Kaspar begin to appear on stage, all dressed identically and moving with the same programmed precision. This multiplication of the self serves as a chilling visual metaphor for the mass-produced nature of modern identity, where the unique soul is discarded in favor of a standardized social unit. The play eventually collapses into a cacophony of overlapping voices and sensory overload, illustrating the eventual breakdown of any system that attempts to impose total order upon the inherent messiness of human life. Handke is not just critiquing a specific political or social regime but is interrogating the very foundation of human communication, suggesting that we are all, to some extent, puppets of a language that we did not choose and cannot escape. The play ends on a note of deep existential exhaustion, leaving the audience to reflect on the degree to which their own thoughts, desires, and identities are merely the echoes of the prompters who shaped them. Through this grueling theatrical experience, Kaspar remains a searing indictment of the ways in which civilization polishes the individual until there is nothing left of the original stone, trading the terrifying freedom of silence for the comfortable prison of a shared vocabulary. Peter Handke’s play Kaspar remains one of the most radical and destabilizing works of modern drama because it treats language not as a gift but as a structural violence. It begins with a figure who is a literal blank slate, a personification of raw human existence devoid of social programming, who enters the stage with a single, repetitive sentence that he does not yet understand. This character is modeled loosely on the historical Kaspar Hauser, but Handke strips away the nineteenth-century mystery to focus entirely on the mechanics of linguistic indoctrination. Throughout the duration of the play, Kaspar is subjected to a relentless barrage of voices from unseen prompters who function as the architects of his consciousness. These voices do not merely teach him to communicate; they teach him to categorize, to judge, and to conform to a pre-existing social order. Handke utilizes a technique he calls speech torture to illustrate how the acquisition of grammar is simultaneously the acquisition of a mental cage. As Kaspar learns to name the objects around him, he loses his direct, unmediated relationship with reality. He learns that a table is a table and that it must be placed in a certain way, and in doing so, he internalizes the rules of a society that demands efficiency and predictability over individual essence. The tragedy of the play lies in its depiction of progress as a form of erasure. By the time Kaspar becomes a fluent speaker, he has been hollowed out, becoming a mere echo of the prompters who have colonized his mind. The play is physically and auditorily exhausting, designed to make the audience feel the weight of this linguistic imposition. Handke’s rhythmic and repetitive prose creates a sense of claustrophobia, suggesting that our very thoughts are composed of borrowed parts and inherited structures. By the final act, when multiple versions of Kaspar appear on stage, the individuality of the protagonist has been completely liquidated into a mass-produced social identity. The play ends not in a triumph of human expression, but in a cacophony of noise and a breakdown of the very order that was so painstakingly constructed. It serves as a haunting reminder that while language allows us to navigate the world, it also dictates the boundaries of what we are allowed to perceive and who we are permitted to be. Through Kaspar, Handke suggests that to enter the human community is to undergo a fundamental betrayal of the self, trading the chaos of true freedom for the orderly silence of a linguistic prison. Peter Handke’s play Kaspar represents a monumental shift in post-war European drama because it treats the stage not as a place for storytelling but as a laboratory for the deconstruction of human consciousness through the medium of language. The play serves as a radical departure from the traditional theatrical arc, replacing character development with a clinical and often agonizing process of linguistic socialization that Handke famously termed speech torture. At the center of this experiment is Kaspar, a figure who enters the performance space as an ontological blank slate, possessing only a single, nonsensical sentence that he repeats like a protective talisman. This sentence is initially a fragment of pure existence, unburdened by definition or social utility, yet it becomes the very hook upon which the invisible prompters hang the heavy fabric of societal expectation. These prompters, who remain offstage and disembodied, represent the collective weight of history, law, grammar, and social norms. They do not merely teach Kaspar how to speak; they dismantle his chaotic, pre-linguistic reality and replace it with a rigid, gridded world of definitions and functions. As the play progresses, the audience witnesses the systematic colonization of Kaspar’s mind. He is taught that objects have specific places and that his body must move in certain ways to reflect the order of his speech. The physical environment of the stage, which begins in a state of disorganized clutter, is gradually transformed into a sterile and perfectly arranged space as Kaspar internalizes the rules of his captors. This synchronization of language, movement, and environment suggests that our very perception of reality is a manufactured byproduct of the words we are given to describe it. Handke’s prose is relentless, utilizing rhythmic repetitions and circular logic to create a sense of claustrophobia that affects the spectator as much as the protagonist. The playwright suggests that the moment a child learns to say I, they have already surrendered to a system that defines what that I is allowed to be. By the middle of the play, Kaspar has been successfully broken and rebuilt into a functioning member of society, capable of articulating complex thoughts and behaving with domestic propriety. However, this transition is framed as a profound loss rather than a triumph of education. The original, spontaneous Kaspar is murdered by the articulate, polite version of himself. The horror of the play reaches its zenith when other versions of Kaspar begin to appear on stage, all dressed identically and moving with the same programmed precision. This multiplication of the self serves as a chilling visual metaphor for the mass-produced nature of modern identity, where the unique soul is discarded in favor of a standardized social unit. The play eventually collapses into a cacophony of overlapping voices and sensory overload, illustrating the eventual breakdown of any system that attempts to impose total order upon the inherent messiness of human life. Handke is not just critiquing a specific political or social regime but is interrogating the very foundation of human communication, suggesting that we are all, to some extent, puppets of a language that we did not choose and cannot escape. The play ends on a note of deep existential exhaustion, leaving the audience to reflect on the degree to which their own thoughts, desires, and identities are merely the echoes of the prompters who shaped them. Through this grueling theatrical experience, Kaspar remains a searing indictment of the ways in which civilization polishes the individual until there is nothing left of the original stone, trading the terrifying freedom of silence for the comfortable prison of a shared vocabulary.
+        </p>
+        
+        <script type="module">
+            import * as THREE from 'three'
+
+            const vertexShader = `
+            varying vec2 vUv;
+            void main() {
+                vUv = uv;
+                gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+            }
+            `
+
+            const fragmentShader = ` 
+           #define SCALE 4.
+
+            varying vec2 vUv;
+            uniform vec3 iResolution;
+            uniform float iTime;
+
+            vec3 random_perlin( vec3 p ) {
+                p = vec3(
+                        dot(p,vec3(127.1,311.7,69.5)),
+                        dot(p,vec3(269.5,183.3,132.7)), 
+                        dot(p,vec3(247.3,108.5,96.5)) 
+                        );
+                return -1.0 + 2.0*fract(sin(p)*43758.5453123);
+            }
+
+            float noise_perlin (vec3 p) {
+                vec3 i = floor(p);
+                vec3 s = fract(p);
+
+                // 3D网格有8个顶点
+                float a = dot(random_perlin(i),s);
+                float b = dot(random_perlin(i + vec3(1, 0, 0)),s - vec3(1, 0, 0));
+                float c = dot(random_perlin(i + vec3(0, 1, 0)),s - vec3(0, 1, 0));
+                float d = dot(random_perlin(i + vec3(0, 0, 1)),s - vec3(0, 0, 1));
+                float e = dot(random_perlin(i + vec3(1, 1, 0)),s - vec3(1, 1, 0));
+                float f = dot(random_perlin(i + vec3(1, 0, 1)),s - vec3(1, 0, 1));
+                float g = dot(random_perlin(i + vec3(0, 1, 1)),s - vec3(0, 1, 1));
+                float h = dot(random_perlin(i + vec3(1, 1, 1)),s - vec3(1, 1, 1));
+
+                // Smooth Interpolation
+                vec3 u = smoothstep(0.,1.,s);
+
+                // 根据八个顶点进行插值
+                return mix(mix(mix( a, b, u.x),
+                            mix( c, e, u.x), u.y),
+                        mix(mix( d, f, u.x),
+                            mix( g, h, u.x), u.y), u.z);
+            }
+
+            // STANDARD WEBGL ENTRY POINT
+            void main() {
+                vec2 uv = gl_FragCoord.xy / iResolution.x;
+    
+                // 1. Get raw noise (values range roughly from -1.0 to 1.0)
+                float n = noise_perlin(vec3(SCALE * uv, iTime * 0.25));
+                
+                // 2. Normalize the noise to a 0.0 to 1.0 range
+                n = n * 0.5 + 0.5;
+                
+                // 3. Add contrast (thresholding) to create the defined, jagged blob shapes
+                n = smoothstep(0.4, 0.6, n);
+                
+                // 4. Set a "floor" color. 
+                float c = mix(0.005, 0.35, n);
+                
+                vec3 color = vec3(c, c, c);
+                
+                gl_FragColor = vec4(color, 1.0);
+            }
+            `
+
+            const scene = new THREE.Scene()
+
+            const camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1)
+
+            const renderer = new THREE.WebGLRenderer()
+            renderer.setSize(window.innerWidth, window.innerHeight)
+            document.body.appendChild(renderer.domElement)
+
+            const uniforms = {
+                iTime: { value: 0 },
+                iResolution: { value: new THREE.Vector3(window.innerWidth, window.innerHeight, 1) }
+            }
+
+            const plane = new THREE.PlaneGeometry(2, 2)
+            const material = new THREE.ShaderMaterial({
+                vertexShader,
+                fragmentShader,
+                uniforms,
+            })
+            scene.add(new THREE.Mesh(plane, material))
+
+            window.addEventListener('resize', onWindowResize, false)
+            function onWindowResize() {
+                camera.updateProjectionMatrix()
+                uniforms.iResolution.value.set(window.innerWidth, window.innerHeight, 1)
+                renderer.setSize(window.innerWidth, window.innerHeight)
+            }
+
+
+            const clock = new THREE.Clock()
+            let delta = 0
+            let alt = 0
+
+            function animate() {
+                requestAnimationFrame(animate)
+
+                delta = clock.getDelta()
+
+                uniforms.iTime.value = clock.getElapsedTime()
+
+                render()
+
+            }
+
+            function render() {
+                renderer.render(scene, camera)
+            }
+
+            animate()
+        </script>
+    </body>
+</html>

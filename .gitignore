@@ -1,1 +1,22 @@
-grav-site/cache/
+# Grav runtime directories
+grav-site/cache/*
+!grav-site/cache/.gitkeep
+grav-site/logs/*
+!grav-site/logs/.gitkeep
+grav-site/tmp/*
+!grav-site/tmp/.gitkeep
+grav-site/backup/*
+!grav-site/backup/.gitkeep
+grav-site/assets/*
+!grav-site/assets/.gitkeep
+
+# Auto-generated user data
+grav-site/user/data/*
+!grav-site/user/data/.gitkeep
+
+# User accounts — contain hashed passwords
+grav-site/user/accounts/*.yaml
+!grav-site/user/accounts/.gitkeep
+
+# macOS
+.DS_Store

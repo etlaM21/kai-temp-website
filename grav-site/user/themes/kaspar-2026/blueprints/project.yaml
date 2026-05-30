@@ -1,0 +1,21 @@
+title: The Project
+extends@: default
+
+form:
+  fields:
+    tabs:
+      fields:
+        content_sections:
+          type: tab
+          title: 'Content Sections'
+          fields:
+            header.content_sections.description:
+              type: textarea
+              label: 'Description'
+              help: 'Detailed explanation of the KASPAR project'
+              rows: 6
+            header.content_sections.funding:
+              type: textarea
+              label: 'Funding'
+              help: 'Sponsors, grants, and funding partners'
+              rows: 6

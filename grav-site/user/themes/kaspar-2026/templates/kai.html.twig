@@ -1,0 +1,17 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+    <div class="project-wrapper">
+        <h1>Our Vision</h1>
+        {{ page.header.content_sections.vision|markdown }}
+
+        <h1>Our Process</h1>
+        {{ page.header.content_sections.process|markdown }}
+
+        <h1>Lessons Learned</h1>
+        {{ page.header.content_sections.lessons_learned|markdown }}
+
+        <h1>Related Projects</h1>
+        {{ page.header.content_sections.related_projects|markdown }}
+    </div>
+{% endblock %}

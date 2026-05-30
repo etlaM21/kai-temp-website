@@ -2,17 +2,6 @@
 
 {% block content %}
     <div class="project-wrapper">
-        
-        {# We use the |markdown filter because we wrote YAML multi-line strings #}
-        {#  <section class="description">
-            {{ page.header.content_sections.description|markdown }}
-        </section>
-
-        <section class="funding">
-            <h2>Funding</h2>
-            {{ page.header.content_sections.funding|markdown }}
-        </section> 
-         #}
-         {{ page.content|raw }}
+        {{ page.content|raw }}
     </div>
 {% endblock %}

@@ -1,6 +1,6 @@
 ---
-title: Blog
-menu: Blog
+title: News
+menu: News
 content:
     items:
         - '@self.children'
@@ -10,4 +10,4 @@ content:
         dir: desc
     pagination: true
 ---
-# Updates, Tutorials, and News
+

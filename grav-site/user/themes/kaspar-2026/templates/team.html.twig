@@ -1,33 +1,20 @@
 {% extends 'partials/base.html.twig' %}
 
 {% block content %}
-    <div class="team-wrapper">
-        <h1>{{ page.title }}</h1>
-        
-        <section class="kaspar-team">
-            <h2>Kaspar Team</h2>
-            {{ page.header.content_sections.kaspar_team|markdown }}
-        </section>
+    <div class="project-wrapper">
+        <h1>Kaspar Team</h1>
+        {{ page.header.content_sections.kaspar_team|markdown }}
 
-        <section class="partners">
-            <div class="residenztheater">
-                <h3>Residenztheater</h3>
-                {{ page.header.content_sections.residenztheater|markdown }}
-            </div>
-            <div class="filmuni">
-                <h3>Filmuni</h3>
-                {{ page.header.content_sections.filmuni|markdown }}
-            </div>
-        </section>
+        <h1>Residenztheater</h1>
+        {{ page.header.content_sections.residenztheater|markdown }}
 
-        <section class="contact">
-            <h2>Contact</h2>
-            {{ page.header.content_sections.contact|markdown }}
-        </section>
+        <h1>Filmuni</h1>
+        {{ page.header.content_sections.filmuni|markdown }}
 
-        <section class="sponsors">
-            <h2>Sponsors</h2>
-            {{ page.header.content_sections.sponsors|markdown }}
-        </section>
+        <h1>Contact</h1>
+        {{ page.header.content_sections.contact|markdown }}
+
+        <h1>Sponsors</h1>
+        {{ page.header.content_sections.sponsors|markdown }}
     </div>
 {% endblock %}

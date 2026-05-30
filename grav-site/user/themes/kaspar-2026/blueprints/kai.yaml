@@ -1,0 +1,31 @@
+title: K.ai — Performing Arts & Technology
+extends@: default
+
+form:
+  fields:
+    tabs:
+      fields:
+        content_sections:
+          type: tab
+          title: 'Content Sections'
+          fields:
+            header.content_sections.vision:
+              type: textarea
+              label: 'Our Vision'
+              help: 'Vision for blending performing arts with AI/technology'
+              rows: 6
+            header.content_sections.process:
+              type: textarea
+              label: 'Our Process'
+              help: 'Step-by-step breakdown of how we work'
+              rows: 6
+            header.content_sections.lessons_learned:
+              type: textarea
+              label: 'Lessons Learned'
+              help: 'Key takeaways from our journey'
+              rows: 6
+            header.content_sections.related_projects:
+              type: textarea
+              label: 'Related Projects'
+              help: 'Links and descriptions of sibling or inspirational projects'
+              rows: 6
